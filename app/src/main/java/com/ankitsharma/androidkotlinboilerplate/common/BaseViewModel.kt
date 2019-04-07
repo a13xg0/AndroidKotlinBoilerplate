@@ -19,4 +19,8 @@ open class BaseViewModel: ViewModel() {
         super.onCleared()
         compositeDisposable.clear()
     }
+
+    fun displayLoader(isLoading: Boolean) {
+        loader.value = isLoading
+    }
 }
